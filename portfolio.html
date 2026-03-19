@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishanth Podugu | Student Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-mode">
+    <!-- Interactive Elements -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <canvas id="bg-canvas" class="bg-canvas"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Portfolio<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="https://pdflink.to/d1e5fa99/" download="CV.pdf" class="btn primary-btn resume-btn">CV <i
+                        class="fas fa-download"></i></a>
+                <a href="https://pdflink.to/69deb243/" download="Sp CV.pdf" class="btn primary-btn resume-btn">Sp CV <i
+                        class="fas fa-download"></i></a>
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon dark-icon"></i>
+                    <i class="fas fa-sun light-icon"></i>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Nishanth Podugu.</h1>
+                <h2 class="role">I'm a <span class="typing-text"></span><span class="cursor">|</span></h2>
+                <p class="description">
+                    A passionate student and aspiring developer, specializing in creating
+                    beautiful, interactive, and functional web experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image hidden-element">
+                        <img src="React gfg.jpeg" alt="Nishanth Podugu" class="profile-photo">
+                    </div>
+
+                    <div class="about-text-content hidden-element delay-1">
+                        <div class="about-tabs">
+                            <button class="tab-btn active" data-target="story">My Story</button>
+                            <button class="tab-btn" data-target="education">Education</button>
+                            <button class="tab-btn" data-target="skills">Skills</button>
+                            <button class="tab-btn" data-target="extra">Extracurriculars</button>
+                        </div>
+
+                        <div class="tab-content active" id="story">
+                            <p>Hi, I'm Nishanth Podugu! I'm a tech-enthusiast student who loves building things for the
+                                web.</p>
+                            <p>From tweaking custom themes in high school to creating full-fledged university and
+                                hackathon projects, I continually strive to learn and build impactful applications.</p>
+                        </div>
+
+                        <div class="tab-content" id="education">
+                            <ul class="timeline-list">
+                                <li>
+                                    <h4>Bachelor of Technology - CSE</h4>
+                                    <p class="institution">Lovely Professional University | Phagwara, Punjab</p>
+                                    <p class="date">August 2023 - Present | CGPA: 8.00</p>
+                                </li>
+                                <li>
+                                    <h4>Intermediate</h4>
+                                    <p class="institution">Ascent Junior College | Madhurawada, Vizag</p>
+                                    <p class="date">April 2021 - March 2023 | Percentage: 95%</p>
+                                </li>
+                                <li>
+                                    <h4>Matriculation</h4>
+                                    <p class="institution">St. Joseph's High School | Srikakulam, Andhra Pradesh</p>
+                                    <p class="date">April 2011 - March 2021 | Percentage: 88%</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-content" id="skills">
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h3>Technologies & Tools</h3>
+                                    <ul class="skills-list">
+                                        <li><span>C++, C, Java</span></li>
+                                        <li><span>HTML, CSS, JavaScript</span></li>
+                                        <li><span>React, Node.js, Bootstrap</span></li>
+                                        <li><span>MySQL, MongoDB, Figma</span></li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h3>Soft Skills</h3>
+                                    <ul class="skills-list">
+                                        <li><span>Problem-Solving</span></li>
+                                        <li><span>Sportsmanship</span></li>
+                                        <li><span>Willingness to learn</span></li>
+                                        <li><span>Adaptability</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="extra">
+                            <ul class="timeline-list">
+                                <li>
+                                    <h4>Social Service</h4>
+                                    <p>Participated in the blood donation camps and other donation services of Red Cross
+                                        Society.</p>
+                                </li>
+                                <li>
+                                    <h4>Hackathon Participant</h4>
+                                    <p>Participated in InnovateX - a 24 hours hackathon to learn new skills by trying to
+                                        build a web application.</p>
+                                </li>
+                                <li>
+                                    <h4>Sports</h4>
+                                    <p>Participated in basketball tournaments.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Training Section -->
+        <section id="training" class="training section-padding">
+            <div class="section-container">
+                <h2 class="section-title">Training</h2>
+
+                <div class="training-item hidden-element delay-1">
+                    <div class="training-header">
+                        <h3 class="training-title">
+                            &bull; Think Design Prototype &ndash; Summer training on design thinking and Figma | <a
+                                href="#" class="cert-link">Certificate</a>
+                        </h3>
+                        <span class="training-date">June 2025 &ndash; July 2025</span>
+                    </div>
+                    <div class="training-body">
+                        <ul class="training-details">
+                            <li>Completed a summer training program in Design Thinking, focusing on user-centric problem
+                                solving and idea prototyping</li>
+                            <li>Gained hands-on experience in UI/UX fundamentals, including wireframing and interface
+                                structuring</li>
+                            <li>Created professional prototypes using Figma, improving design workflow and visualization
+                                skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-padding">
+            <div class="section-container">
+                <h2 class="section-title">Some Things I've Built</h2>
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card hidden-element delay-1">
+                        <div class="project-content">
+                            <p class="project-overline">March 2025 &ndash; April 2025</p>
+                            <h3 class="project-title">Page replacement simulator</h3>
+                            <div class="project-description">
+                                <ul>
+                                    <li>Developed a simulator to analyze and compare FIFO, LRU, and Optimal page
+                                        replacement algorithms through real-time visualization.</li>
+                                    <li>Implemented using Python with Tkinter for GUI and matplotlib for performance
+                                        visualization.</li>
+                                    <li>Achieved clear insights into virtual memory behavior by visualizing page faults
+                                        and algorithm efficiency interactively.</li>
+                                </ul>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>Python</li>
+                                <li>Tkinter</li>
+                                <li>Matplotlib</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/nishanth-podugu/Page-Replacement-Simulator" target="_blank"
+                                    aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card hidden-element delay-2">
+                        <div class="project-content">
+                            <p class="project-overline">Sep 2024 &ndash; October 2024</p>
+                            <h3 class="project-title">Game Master &ndash; Gaming AI Assistant</h3>
+                            <div class="project-description">
+                                <ul>
+                                    <li>Constructed Game Master, an AI-powered assistant designed to provide real-time
+                                        gaming tips and strategy suggestions.</li>
+                                    <li>Integrated the DeepSeek API to enable intelligent, context-aware responses for
+                                        various game scenarios.</li>
+                                    <li>Engineered the interface using HTML, CSS, and JavaScript, ensuring a smooth and
+                                        responsive user experience.</li>
+                                    <li>Enhanced gameplay support through smart recommendations, improving user
+                                        engagement and decision-making.</li>
+                                </ul>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>DeepSeek API</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/nishanth-podugu/game-master-ai-assistant" target="_blank"
+                                    aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card hidden-element delay-3">
+                        <div class="project-content">
+                            <p class="project-overline">March 2023 &ndash; April 2023</p>
+                            <h3 class="project-title">Super store &ndash; Supermarket management website</h3>
+                            <div class="project-description">
+                                <ul>
+                                    <li>Created a supermarket web platform to enable easy browsing and ordering of
+                                        groceries and household essentials.</li>
+                                    <li>Implemented using HTML, CSS, and JavaScript to build responsive and interactive
+                                        web pages.</li>
+                                    <li>Delivered a user-friendly and efficient shopping experience with seamless
+                                        navigation and add-to-cart functionality.</li>
+                                </ul>
+                            </div>
+                            <ul class="project-tech-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://github.com/nishanth-podugu/supermarket-management-website"
+                                    target="_blank" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section-padding">
+            <div class="section-container">
+                <h2 class="section-title">My Certificates</h2>
+                <div class="certificates-list">
+
+                    <!-- FreeCodeCamp -->
+                    <a href="https://www.freecodecamp.org/certification/fcc4a7aa92d-1d3a-4d59-b292-5b40052899d4/responsive-web-design"
+                        target="_blank" class="certificate-link-card hidden-element delay-1">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-text">
+                            <h3>Responsive Web Design</h3>
+                            <p>freeCodeCamp</p>
+                        </div>
+                        <i class="fas fa-external-link-alt ext-icon"></i>
+                    </a>
+
+                    <!-- Infosys -->
+                    <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_0135015511562403847605/1-76b3c536-1ab8-4e2e-9bbb-ffeaceeb83f6.pdf"
+                        target="_blank" class="certificate-link-card hidden-element delay-2">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-text">
+                            <h3>Computational Theory: Language Principle & Finite Automata</h3>
+                            <p>Infosys Springboard</p>
+                        </div>
+                        <i class="fas fa-external-link-alt ext-icon"></i>
+                    </a>
+
+                    <!-- Java Programming - GFG -->
+                    <a href="https://media.geeksforgeeks.org/courses/certificates/eeffb7afae8070c0692d9af118b48bd5.pdf"
+                        target="_blank" class="certificate-link-card hidden-element delay-3">
+                        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-text">
+                            <h3>Java Programming - GFG</h3>
+                            <p>GeeksforGeeks</p>
+                        </div>
+                        <i class="fas fa-external-link-alt ext-icon"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="section-container">
+                <div class="contact-content hidden-element">
+                    <p class="contact-overline">What's Next?</p>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-text">
+                        I'm currently looking for internships and new opportunities. Whether you have a question or just
+                        want to say hi, I'll try my best to get back to you!
+                    </p>
+                    <a href="mailto:Chinnavinny05@gmail.com" class="btn primary-btn">Say Hello</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="https://github.com/nishanth-podugu" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nishanth-podugu-033a70298/" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>Designed & Built by Nishanth Podugu
+        </p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
